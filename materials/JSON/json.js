@@ -18,3 +18,4 @@ console.log(stringifiedJson);
  */
 const parsed = JSON.parse(stringifiedJson);
 console.log(parsed.name);
+console.log('Hello World!');
