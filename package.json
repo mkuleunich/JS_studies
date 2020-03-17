@@ -1,6 +1,6 @@
 {
   "name": "js_studies",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "test",
   "main": "test.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/mkuleunich/JS_studies.git"
   },
-  "author": "",
+  "author": "MK",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mkuleunich/JS_studies/issues"
