@@ -13,16 +13,28 @@
 function calculateDiscount(redemption) {
   let discount;
 
-  //PLACE YOUR CODE HERE
+  if (redemption >= 0 && redemption <= 350) {
+    discount = 0;
+  } else if (redemption >= 351 && redemption <= 1350) {
+    discount = 15;
+  } else if (redemption >= 1351 && redemption <= 2700) {
+    discount = 30;
+  } else if (redemption >= 2701 && redemption <= 6500) {
+    discount = 45;
+  } else {
+    discount = 0;
+  }
 
   return discount;
 }
-
 /** TODO
  * implement factorial algorithm using for, while, do..while operators
  */
 {
-  const i = 10; //10! = 3628800
+  let i = 10; //10! = 3628800
+  let x = 1;
+   for (i = 1; i <= 10; i++) x = x * i;
+  console.log(x);
 }
 
 /**
@@ -30,6 +42,7 @@ function calculateDiscount(redemption) {
  */
 {
   const substr = ["I", " love", " JS"];
+  console.log(substr.join (' '));
 }
 
 /**
@@ -42,6 +55,12 @@ function calculateDiscount(redemption) {
     interestOnDeposit: 250,
     otherExpences: -300
   };
+
+  for (let property in personIncomes) {
+    let sum = personIncomes[salary] + personIncomes[rent] + personIncomes[interestOnDeposit] + personIncomes[otherExpences];
+    console.log(sum);
+  }
 }
+
 
 module.exports = calculateDiscount;
