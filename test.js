@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // console.log('I like this training very much!');
 const x = 3;
 const y = 7;
@@ -29,3 +30,7 @@ switch (operator) {
       } else {
           console.log(x / y);
       }
+=======
+console.log('I like this training');
+console.log('I like this training very much!');
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd

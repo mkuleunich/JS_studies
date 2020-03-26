@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * Write the function that will calculate the amount of discount
+=======
+ * Write the function that will calculate the amonut of discout 
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
  * considering the redemption amount
  * Rules are the following:
  * - 0    - 350:  0%
@@ -12,6 +16,7 @@
 
 function calculateDiscount(redemption) {
   let discount;
+<<<<<<< HEAD
 
   if (redemption >= 0 && redemption <= 350) {
     discount = 0;
@@ -64,3 +69,12 @@ function calculateDiscount(redemption) {
 
 
 module.exports = calculateDiscount;
+=======
+  
+  //PLACE YOUR CODE HERE
+
+  return discount;
+}
+
+module.exports = calculateDiscount;
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
