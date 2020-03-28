@@ -1,9 +1,6 @@
 /**
-<<<<<<< HEAD
- * Write the function that will calculate the amount of discount
-=======
+
  * Write the function that will calculate the amonut of discout 
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
  * considering the redemption amount
  * Rules are the following:
  * - 0    - 350:  0%
@@ -16,7 +13,6 @@
 
 function calculateDiscount(redemption) {
   let discount;
-<<<<<<< HEAD
 
   if (redemption >= 0 && redemption <= 350) {
     discount = 0;
@@ -47,7 +43,12 @@ function calculateDiscount(redemption) {
  */
 {
   const substr = ["I", " love", " JS"];
-  console.log(substr.join (' '));
+let sum = '';
+
+for (let elem of substr) {
+sum += elem;
+}
+console.log(sum);
 }
 
 /**
@@ -60,21 +61,13 @@ function calculateDiscount(redemption) {
     interestOnDeposit: 250,
     otherExpences: -300
   };
-
-  for (let property in personIncomes) {
-    let sum = personIncomes[salary] + personIncomes[rent] + personIncomes[interestOnDeposit] + personIncomes[otherExpences];
-    console.log(sum);
-  }
-}
-
-
-module.exports = calculateDiscount;
-=======
   
-  //PLACE YOUR CODE HERE
-
-  return discount;
+  let sum = 0;
+  
+for (let elem in personIncomes) {
+sum += personIncomes[elem];
 }
-
+  console.log(sum);
+}
 module.exports = calculateDiscount;
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
+
