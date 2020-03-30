@@ -23,7 +23,11 @@ function getFullName(object) {
  * true if odd, false if even
  */
 function isOdd(n) {
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 }
 
 /**
@@ -52,7 +56,11 @@ function getGoogle(n) {
  * }
  */
 function getUser(firstName, lastName, age) {
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 }
 
 /**
@@ -62,6 +70,11 @@ function getUser(firstName, lastName, age) {
  */
 
 function getTotalPath(path) {
+<<<<<<< HEAD
+    
+}
+
+=======
 
 }
 
@@ -74,6 +87,7 @@ function getTotalPath(path) {
 function discountFunction(discount) {
 
 }
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 
 module.exports = {
     add,
@@ -83,5 +97,9 @@ module.exports = {
     getGoogle,
     getUser,
     getTotalPath,
+<<<<<<< HEAD
+};
+=======
     discountFunction
 };
+>>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
