@@ -24,6 +24,9 @@ function getFullName(object) {
  * true if odd, false if even
  */
 function isOdd(n) {
+    if (n % 2 === 1) {
+        return true;
+    } else return false;
 
 }
 
