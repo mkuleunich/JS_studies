@@ -43,6 +43,8 @@ function getShortest(wordArray) {
  * e.g getGoogle(5) should return "gooooogle"
  */
 function getGoogle(n) {
+    let letter = "o".repeat(n);
+    return "g" + letter + "gle";
 
 }
 
@@ -56,6 +58,11 @@ function getGoogle(n) {
  * }
  */
 function getUser(firstName, lastName, age) {
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        age: age
+    };
     
 }
 
