@@ -57,7 +57,7 @@ function getGoogle(n) {
  *    age: 42
  * }
  */
-function getUser(firstName, lastName, age) {
+function getUser(firstName = null, lastName = null, age = null) {
     return {
         firstName: firstName,
         lastName: lastName,
@@ -73,7 +73,11 @@ function getUser(firstName, lastName, age) {
  */
 
 function getTotalPath(path) {
-    
+    let TotalPath = 0;
+    for (let x = 0; x < path.length; x++) {
+        TotalPath += path[x].distance;
+    }
+    return(TotalPath);
 }
 
 
