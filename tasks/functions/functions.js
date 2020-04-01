@@ -35,7 +35,14 @@ function isOdd(n) {
  * e.g ["one", "two", "three"] should return one
  */
 function getShortest(wordArray) {
+    let shortest = wordArray[0];
 
+    for (let a = 1; a < wordArray.length; a++) {
+        if (wordArray[a].length < shortest.length) {
+            shortest = wordArray[a];
+        }
+    }
+return shortest;
 }
 
 /**
