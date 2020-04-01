@@ -3,7 +3,7 @@
  *
  */
 function add(a, b) {
-
+    return a + b;
 }
 
 /**
@@ -14,20 +14,20 @@ function add(a, b) {
  *    lastName: "Dou"
  * }
  */
+
+
 function getFullName(object) {
-
+    return object.firstName + " " + object.lastName;
 }
-
 /**
  * write fuction that checks is number is odd
  * true if odd, false if even
  */
 function isOdd(n) {
-<<<<<<< HEAD
-    
-=======
+    if (n % 2 === 1) {
+        return true;
+    } else return false;
 
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 }
 
 /**
@@ -35,7 +35,14 @@ function isOdd(n) {
  * e.g ["one", "two", "three"] should return one
  */
 function getShortest(wordArray) {
+    let shortest = wordArray[0];
 
+    for (let a = 1; a < wordArray.length; a++) {
+        if (wordArray[a].length < shortest.length) {
+            shortest = wordArray[a];
+        }
+    }
+return shortest;
 }
 
 /**
@@ -43,6 +50,8 @@ function getShortest(wordArray) {
  * e.g getGoogle(5) should return "gooooogle"
  */
 function getGoogle(n) {
+    let letter = "o".repeat(n);
+    return "g" + letter + "gle";
 
 }
 
@@ -55,12 +64,13 @@ function getGoogle(n) {
  *    age: 42
  * }
  */
-function getUser(firstName, lastName, age) {
-<<<<<<< HEAD
+function getUser(firstName = null, lastName = null, age = null) {
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        age: age
+    };
     
-=======
-
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 }
 
 /**
@@ -70,24 +80,13 @@ function getUser(firstName, lastName, age) {
  */
 
 function getTotalPath(path) {
-<<<<<<< HEAD
-    
+    let TotalPath = 0;
+    for (let x = 0; x < path.length; x++) {
+        TotalPath += path[x].distance;
+    }
+    return(TotalPath);
 }
 
-=======
-
-}
-
-/**
- * write function that returns function that calculates given discount
- * e.g
- * const discount10 = discountFunction(10);
- * discount10(90) //returns 81
- */
-function discountFunction(discount) {
-
-}
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 
 module.exports = {
     add,
@@ -97,9 +96,4 @@ module.exports = {
     getGoogle,
     getUser,
     getTotalPath,
-<<<<<<< HEAD
 };
-=======
-    discountFunction
-};
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
