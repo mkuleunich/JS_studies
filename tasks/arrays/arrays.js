@@ -16,10 +16,8 @@ function getCharactersNames(chars) {
  * @param {Array} chars
  */
 function printCharacterNames(chars) {
-    let name = ' ';
-
     chars.forEach(char => {
-        console.log(char.name);
+    console.log(char.name);
     });
 
 }
@@ -85,6 +83,8 @@ function minItem(arr) {
     } 
     return arr.indexOf(minItem);
 }
+
+  
 
 module.exports = {
     getCharactersNames,
