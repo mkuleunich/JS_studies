@@ -7,12 +7,7 @@ const {
     getShortest,
     getGoogle,
     getUser,
-<<<<<<< HEAD
     getTotalPath
-=======
-    getTotalPath,
-    discountFunction
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 } = require('../functions');
 
 describe('add', () => {
@@ -22,7 +17,7 @@ describe('add', () => {
 });
 
 describe('getFullName', () => {
-    it('should return "John Dou" if passing "John" and "Dou"', () => expect(getFullName('John', 'Dou')).to.equal(3));
+    it('should return "John Dou" if passing "John" and "Dou"', () => expect(getFullName({firstName: 'John', lastName: 'Dou'})).to.equal('John Dou'));
 });
 
 describe('isOdd', () => {
@@ -31,13 +26,8 @@ describe('isOdd', () => {
 });
 
 describe('getShortest', () => {
-<<<<<<< HEAD
     it('should return "one" if passing ["one", "two", "three"]', () => expect(getShortest(["one", "two", "three"])).to.equal("one"));
     it('should return "x" if passing ["one", "two", "three", "x"]', () => expect(getShortest(["one", "two", "three", "x"])).to.equal("x"));
-=======
-    it('should return "one" if passing ["one", "two", "three"]', () => expect(getShortest(2)).to.equal("one"));
-    it('should return "x" if passing ["one", "two", "three", "x"]', () => expect(getShortest(3)).to.equal("x"));
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
 });
 
 describe('getGoogle', () => {
@@ -78,7 +68,6 @@ describe('getTotalPath', () => {
     });
 });
 
-<<<<<<< HEAD
 // describe('discountFunction', () => {
 //     it('should return discount10', () => {
 //         const discount10 = discountFunction(10);
@@ -93,19 +82,3 @@ describe('getTotalPath', () => {
 //         expect(discount20(1000)).to.equal(800);
 //     });
 // });
-=======
-describe('discountFunction', () => {
-    it('should return discount10', () => {
-        const discount10 = discountFunction(10);
-        expect(discount10(90)).to.equal(81);
-    });
-    it('should return discount15', () => {
-        const discount15 = discountFunction(15);
-        expect(discount15(110)).to.equal(93.5);
-    });
-    it('should return discount20', () => {
-        const discount20 = discountFunction(20);
-        expect(discount20(1000)).to.equal(800);
-    });
-});
->>>>>>> d763d90a58120eb0c3e73d5c2128956c7a933cfd
