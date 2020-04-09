@@ -1,6 +1,5 @@
 /**
-
- * Write the function that will calculate the amonut of discout 
+ * Write the function that will calculate the amount of discount
  * considering the redemption amount
  * Rules are the following:
  * - 0    - 350:  0%
@@ -14,6 +13,7 @@
 function calculateDiscount(redemption) {
   let discount;
 
+  //PLACE YOUR CODE HERE
   if (redemption >= 0 && redemption <= 350) {
     discount = 0;
   } else if (redemption >= 351 && redemption <= 1350) {
@@ -28,14 +28,22 @@ function calculateDiscount(redemption) {
 
   return discount;
 }
+
 /** TODO
  * implement factorial algorithm using for, while, do..while operators
  */
 {
-  let i = 10; //10! = 3628800
-  let x = 1;
-   for (i = 1; i <= 10; i++) x = x * i;
-  console.log(x);
+  const i = 10; //10! = 3628800
+  let result = 1;
+  
+  if (i == 1 || i == 0) {
+    result = 1;
+  } else {
+    for (let j = 1; j < (i + 1); j++) {
+      result *= j;
+    }
+  }
+  console.log(result);
 }
 
 /**
@@ -43,12 +51,12 @@ function calculateDiscount(redemption) {
  */
 {
   const substr = ["I", " love", " JS"];
-let sum = '';
 
-for (let elem of substr) {
-sum += elem;
-}
-console.log(sum);
+  let concatenated = '';
+  for (let str of substr) {
+    concatenated += str;
+  }
+  console.log(concatenated);
 }
 
 /**
@@ -61,13 +69,11 @@ console.log(sum);
     interestOnDeposit: 250,
     otherExpences: -300
   };
-  
   let sum = 0;
-  
-for (let elem in personIncomes) {
-sum += personIncomes[elem];
+  for (let elem in personIncomes) {
+    sum += personIncomes[elem];
+  }
+  console.log('The sum is ' + sum);
 }
-  console.log(sum);
-}
-module.exports = calculateDiscount;
 
+module.exports = calculateDiscount;

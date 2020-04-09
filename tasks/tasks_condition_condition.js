@@ -40,7 +40,6 @@ const a = 3,
     }
 
 //Task 2
-
 (x <10 && y < 10) ? console.log(x + y) : console.log(x * y);
 
 /** TODO
@@ -50,24 +49,24 @@ const a = 3,
  */
 
 
-    const x = 3;
-    const y = 7;
-    let operator = "add";
+const x = 3;
+const y = 7;
+let operator = 'multiply';
 
-    switch (operator) {
-          case operator = "add":
-            console.log(x + y);
-            break;
-          case operator = "subtract":
-            console.log(x - y);
-            break;
-          case operator = "multiply":
-            console.log(x * y);
-            break;
-          default:
-            console.log(x / y); 
-            break;
-        }  
+switch (operator) {
+  case 'add':
+        console.log(x + y);
+        break;
+  case 'subtract':
+        console.log(x - y);
+        break;
+  case 'multiply':
+        console.log(x * y);
+        break;
+  default:
+        console.log(x / y); 
+        break;
+    }
 
 
         //OR

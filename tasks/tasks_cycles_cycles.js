@@ -1,6 +1,5 @@
 /**
-
- * Write the function that will calculate the amonut of discout 
+ * Write the function that will calculate the amount of discount
  * considering the redemption amount
  * Rules are the following:
  * - 0    - 350:  0%
@@ -20,22 +19,16 @@ function calculateDiscount(redemption) {
     discount = 15;
   } else if (redemption >= 1351 && redemption <= 2700) {
     discount = 30;
-  } else if (redemption >= 2701 && redemption <= 6500) {
-    discount = 45;
-  } else {
-    discount = 0;
-  }
+  } 
 
   return discount;
 }
+
 /** TODO
  * implement factorial algorithm using for, while, do..while operators
  */
 {
-  let i = 10; //10! = 3628800
-  let x = 1;
-   for (i = 1; i <= 10; i++) x = x * i;
-  console.log(x);
+  const i = 10; //10! = 3628800
 }
 
 /**
@@ -43,12 +36,6 @@ function calculateDiscount(redemption) {
  */
 {
   const substr = ["I", " love", " JS"];
-let sum = '';
-
-for (let elem of substr) {
-sum += elem;
-}
-console.log(sum);
 }
 
 /**
@@ -61,13 +48,7 @@ console.log(sum);
     interestOnDeposit: 250,
     otherExpences: -300
   };
-  
-  let sum = 0;
-  
-for (let elem in personIncomes) {
-sum += personIncomes[elem];
 }
-  console.log(sum);
-}
+
 module.exports = calculateDiscount;
 

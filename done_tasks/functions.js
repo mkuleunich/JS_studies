@@ -3,7 +3,7 @@
  *
  */
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
 /**
@@ -14,20 +14,19 @@ function add(a, b) {
  *    lastName: "Dou"
  * }
  */
-
-
 function getFullName(object) {
-    return object.firstName + " " + object.lastName;
+  return object.firstName + " " + object.lastName;
 }
 /**
  * write fuction that checks is number is odd
  * true if odd, false if even
  */
 function isOdd(n) {
-    if (n % 2 === 1) {
-        return true;
-    } else return false;
-
+	if (n % 2 == 0) {
+			return false;
+	} else {
+			return true;
+	}
 }
 
 /**
@@ -35,14 +34,14 @@ function isOdd(n) {
  * e.g ["one", "two", "three"] should return one
  */
 function getShortest(wordArray) {
-    let shortest = wordArray[0];
+	let shortest = wordArray[0];
 
-    for (let a = 1; a < wordArray.length; a++) {
-        if (wordArray[a].length < shortest.length) {
-            shortest = wordArray[a];
-        }
-    }
-return shortest;
+	for (let i = 1; i < wordArray.length; i++) {
+		if (wordArray[i].length < shortest.length) {
+			shortest = wordArray[i];
+		}
+	}
+	return shortest;
 }
 
 /**
@@ -50,9 +49,8 @@ return shortest;
  * e.g getGoogle(5) should return "gooooogle"
  */
 function getGoogle(n) {
-    let letter = "o".repeat(n);
-    return "g" + letter + "gle";
-
+	let oos = 'o'.repeat(n);
+	return 'g' + oos + 'gle';
 }
 
 /**
@@ -64,13 +62,13 @@ function getGoogle(n) {
  *    age: 42
  * }
  */
-function getUser(firstName = null, lastName = null, age = null) {
-    return {
-        firstName: firstName,
-        lastName: lastName,
-        age: age
-    };
-    
+function getUser(firstName, lastName, age) {
+
+	return {
+		firstName: firstName || null,
+		lastName: lastName || null,
+		age: age || null
+	};   
 }
 
 /**
@@ -80,11 +78,13 @@ function getUser(firstName = null, lastName = null, age = null) {
  */
 
 function getTotalPath(path) {
-    let TotalPath = 0;
-    for (let x = 0; x < path.length; x++) {
-        TotalPath += path[x].distance;
-    }
-    return(TotalPath);
+	let totalPath = 0;
+
+	for (let elem of path) {
+		totalPath += elem.distance;
+	}
+
+	return totalPath; 
 }
 
 
