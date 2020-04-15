@@ -4,7 +4,16 @@
  * 2) constructor that pass firstName and lastName to the object
  * 3) method getFullName
  */
-//put your code here
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    getFullName () {
+        return this.firstName + " " + this.lastName;
+    }
+
+}
 
 /**
  * implement class Student that extends Person with:
@@ -16,10 +25,19 @@
  *    0 if equal
  *    -1 if second greater
  */
-//put your code here
+class Student extends Person {
+    constructor(firstName, lastName, grade) {
+        super(firstName,lastName);
+        this.grade = grade;
+    }
+    getGrade() {
+        return this.grade;
+    }
 
-const person = //create instance of class person
-const student = //create instance of class student
+}
+
+const person = new Person ('Donald', 'Trump');
+const student = new Student ('Donald', 'Trump', 8);
 
 module.exports = {
     person,
